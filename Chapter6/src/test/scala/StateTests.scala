@@ -1,6 +1,6 @@
 import pprint.*
 import fpinscala.utils.Utils.*
-import fpinscala.chapter6.datatypes.state.*
+import fpinscala.datatypes.*
 import State.*
 
 class StateTest1 extends munit.FunSuite:

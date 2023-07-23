@@ -3,10 +3,15 @@ import Dependencies._
 val scalaTestVersion = "3.2.16"
 val scalaCheckVersion = "1.15.4"
 
-ThisBuild / scalaVersion := "3.3.0"
+Global / onChangedBuildSource := ReloadOnSourceChanges
+ThisBuild / scalaVersion := "3.3.0" // "3.3.0", "2.13.11"
 ThisBuild / version := "0.1.0-SNAPSHOT"
 ThisBuild / organization := "com.fpinscala"
 ThisBuild / organizationName := "scarlet"
+ThisBuild / watchTriggeredMessage := Watch.clearScreenOnTrigger
+ThisBuild / watchBeforeCommand := Watch.clearScreen
+ThisBuild / watchForceTriggerOnAnyChange := true
+Test / testOptions += Tests.Argument(TestFrameworks.ScalaCheck, "-s", "10")
 
 addCommandAlias("ll", "projects")
 addCommandAlias("cd", "project")
@@ -15,22 +20,17 @@ addCommandAlias("t", "test")
 addCommandAlias("c", "console")
 
 lazy val commonSettings = Seq(
-  organization := "samsung",
-  ThisBuild / turbo := true,
-  Global / onChangedBuildSource := ReloadOnSourceChanges,
-  watchTriggeredMessage := Watch.clearScreenOnTrigger,
-  Test / testOptions += Tests.Argument(TestFrameworks.ScalaCheck, "-s", "10"),
-  resolvers ++= Resolver.sonatypeOssRepos("snapshots"),
-  libraryDependencies += "org.scalatest" %% "scalatest" % scalaTestVersion % "test",
-  libraryDependencies += "org.scalacheck" %% "scalacheck" % scalaCheckVersion % "test",
-  libraryDependencies += "org.slf4j" % "slf4j-simple" % "1.7.36" % "test",
-
-  // munit test framework
-  libraryDependencies += "org.scala-lang" %% "toolkit-test" % "0.1.7" % Test,
-
-  /** PPrint
-    */
-  libraryDependencies += "com.lihaoyi" %% "pprint" % "0.7.1",
+  libraryDependencies ++= Seq(
+    "org.scalactic" %% "scalactic" % scalaTestVersion,
+    "org.scalatest" %% "scalatest" % scalaTestVersion % "test",
+    "org.scalacheck" %% "scalacheck" % scalaCheckVersion % "test",
+    // "org.scalatestplus" %% "scalacheck-1-17" % "3.2.16.0" % "test",
+    // "org.scalatestplus" %% "junit-4-13" % "3.2.16.0" % "test",
+    // "org.slf4j" % "slf4j-simple" % "1.7.36" % "test",
+    "com.lihaoyi" %% "pprint" % "0.7.1",
+    // munit test framework
+    "org.scala-lang" %% "toolkit-test" % "0.1.7" % Test
+  ),
   scalacOptions := Seq(
     "-deprecation", // emit warning and location for usages of deprecated APIs
     "-feature", // emit warning and location for usages of features that should be imported explicitly
@@ -38,6 +38,8 @@ lazy val commonSettings = Seq(
     "-language:postfixOps",
     "-language:higherKinds",
     "-Ykind-projector", // allow `*` as wildcard to be compatible with kind projector
+    // "-explain", // explain errors in more detail
+    // "-explain-types", // explain type errors in more detail
     "-indent", // allow significant indentation.
     "-new-syntax", // require `then` and `do` in control expressions.
     "-print-lines", // show source code line numbers.
@@ -60,7 +62,7 @@ lazy val root = (project in file("."))
     chapter4,
     chapter5,
     chapter6,
-    parsers,
+    parser,
     utils
   )
 
@@ -74,7 +76,11 @@ lazy val basics = (project in file("Basics"))
 lazy val chapter1 = (project in file("Chapter1"))
   .settings(commonSettings: _*)
   .settings(
-    name := "Chapter1"
+    name := "Chapter1",
+    console / initialCommands := """
+      import fpinscala.intro.*, Cafes.*
+      import pprint.*
+      """
   )
   .dependsOn(utils)
 
@@ -95,14 +101,21 @@ lazy val chapter3 = (project in file("Chapter3"))
 lazy val chapter4 = (project in file("Chapter4"))
   .settings(commonSettings: _*)
   .settings(
-    name := "Chapter4"
+    name := "Chapter4",
+    console / initialCommands := """
+      import fpinscala.datatype.*
+      import Option.*
+      """
   )
   .dependsOn(utils)
 
 lazy val chapter5 = (project in file("Chapter5"))
   .settings(commonSettings: _*)
   .settings(
-    name := "Chapter5"
+    name := "Chapter5",
+    console / initialCommands := """
+      import fpinscala.datatypes.*, LazyList.*
+      """
   )
   .dependsOn(utils)
 
@@ -111,24 +124,23 @@ lazy val chapter6 = (project in file("Chapter6"))
   .settings(
     name := "Chapter6",
     console / initialCommands := """
-      import fpinscala.chapter6.rng.*, RNG.*
-      import fpinscala.chapter6.rand.*, Rand.*
-      import fpinscala.chapter6.datatypes.state.*, State.*
+      import fpinscala.rng.*
+      import fpinscala.rand.*
+      import fpinscala.datatypes.*, State.*
+      val rng = SimpleRNG(42)
       """
   )
   .dependsOn(utils)
 
-lazy val parsers = (project in file("Parsers"))
+lazy val parser = (project in file("Parser"))
   .settings(commonSettings: _*)
   .settings(
-    name := "Parsers"
+    name := "Parser"
   )
-  .dependsOn(utils)
+  .dependsOn(utils, chapter6)
 
 lazy val utils = (project in file("Utils"))
   .settings(commonSettings: _*)
   .settings(
     name := "Utils"
   )
-
-// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.

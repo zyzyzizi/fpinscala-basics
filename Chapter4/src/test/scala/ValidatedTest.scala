@@ -1,29 +1,10 @@
 // import munit.FunSuite
 
 import pprint.*
-import fpinscala.chapter4.datatypes.validated.*
-import fpinscala.chapter4.datatypes.either.*
+import fpinscala.datatypes.{Either, Validated}
 import Validated.*, Either.*
 
 class ValidatedTest extends munit.FunSuite:
-
-  case class Name private (value: String)
-
-  object Name:
-    def apply(name: String): Validated[String, Name] =
-      if name == "" || name == null then Invalid(List("Name is empty."))
-      else Valid(new Name(name))
-
-  case class Age private (value: Int)
-  object Age:
-    def apply(age: Int): Validated[String, Age] =
-      if age < 0 then Invalid(List("Age is out of range."))
-      else Valid(new Age(age))
-
-  case class Person(name: Name, age: Age)
-  object Person:
-    def make(name: String, age: Int): Validated[String, Person] =
-      Name(name).map2(Age(age))(Person(_, _))
 
   test("validated demo1".only) {
     println("\u2500" * 50)

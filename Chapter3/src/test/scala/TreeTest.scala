@@ -1,4 +1,5 @@
-import fpinscala.chapter3.datatypes.tree.Tree.*
+import fpinscala.datatypes.Tree
+import Tree.*
 import fpinscala.utils.Utils.*
 import pprint.*
 

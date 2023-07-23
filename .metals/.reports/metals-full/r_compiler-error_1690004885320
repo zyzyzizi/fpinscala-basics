@@ -1,0 +1,56 @@
+dotty.tools.dotc.core.TypeError$$anon$1: Toplevel definition Rand is defined in
+  D:/Git/FP/fpinscala/Chapter6/src/main/scala/fpinscala/rand/Rand.scala
+and also in
+  D:/Git/FP/fpinscala/Chapter6/src/main/scala/fpinscala/rand/Rand.scala
+One of these files should be removed from the classpath.
+occurred in the presentation compiler.
+
+action parameters:
+offset: 505
+uri: file:///D:/Git/FP/fpinscala/Chapter6/src/main/scala/fpinscala/rand/RandDemo.scala
+text:
+package fpinscala.rand
+
+object RandDemo /* extends App */ {
+  import fpinscala.utils.Utils._
+  import fpinscala.rand.*
+  import Rand.*
+
+  delim()
+  println(unit(42)(SimpleRNG(42)))
+  delim()
+
+  println(map(unit(42))(_ + 1)(SimpleRNG(42)))
+  delim()
+
+  println(doubleViaMap(SimpleRNG(42)))
+  delim()
+
+  /*
+   * Combining State Actions Tests
+   */
+  println(map2(unit(1), unit(7))(_ + _)(SimpleRNG(42)))
+  println(both(unit(1), unit(7))(SimpleRNG(42)))
+  println(randIntDouble(SimpleRN@@G(42)))
+  println(randDoubleInt(SimpleRNG(42)))
+  delim()
+
+  println(sequence(List(int, int, int))(SimpleRNG(42)))
+  println(intsViaSequence(3)(SimpleRNG(42)))
+  delim()
+
+  /*
+   * Neting State Actions Tests
+   */
+
+  println(nonNegativeLessThan(100)(SimpleRNG(42)))
+  delim()
+
+  println(nonNegativeLessThanViaFlatMap(100)(SimpleRNG(42)))
+  delim()
+}
+
+
+
+error stacktrace:
+

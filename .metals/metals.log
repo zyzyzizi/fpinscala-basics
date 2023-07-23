@@ -8402,3 +8402,954 @@ org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequ
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.lang.Thread.run(Thread.java:833)
 
+2023.07.13 23:44:43 INFO  Started: Metals version 0.11.12 in workspace 'D:\Git\FP\fpinscala' for client Visual Studio Code 1.80.0.
+7월 13, 2023 11:44:43 오후 org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+7월 13, 2023 11:44:43 오후 org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+7월 13, 2023 11:44:43 오후 org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+7월 13, 2023 11:44:44 오후 org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Git\FP\fpinscala\.metals\metals (H2 2.1)
+2023.07.13 23:44:44 WARN  resetting database: D:\Git\FP\fpinscala\.metals\metals.h2.db
+2023.07.13 23:44:44 ERROR org.flywaydb.core.api.FlywayException: Unable to execute clean as it has been disabled with the 'flyway.cleanDisabled' property.
+	at org.flywaydb.core.internal.command.clean.DbClean.clean(DbClean.java:56)
+	at org.flywaydb.core.Flyway.doClean(Flyway.java:397)
+	at org.flywaydb.core.Flyway.lambda$clean$2(Flyway.java:235)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:196)
+	at org.flywaydb.core.Flyway.clean(Flyway.java:234)
+	at scala.meta.internal.metals.Tables.migrateOrRestart(Tables.scala:156)
+	at scala.meta.internal.metals.Tables.tryUrl(Tables.scala:144)
+	at scala.meta.internal.metals.Tables.persistentConnection(Tables.scala:138)
+	at scala.meta.internal.metals.Tables.tryAutoServer(Tables.scala:81)
+	at scala.meta.internal.metals.Tables.connect(Tables.scala:48)
+	at scala.meta.internal.metals.Tables.connection(Tables.scala:74)
+	at scala.meta.internal.metals.Tables.$anonfun$fingerprints$1(Tables.scala:39)
+	at scala.meta.internal.metals.Fingerprints.load(Fingerprints.scala:52)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$initialize$2(MetalsLspService.scala:876)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+7월 13, 2023 11:44:45 오후 org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Git\FP\fpinscala\.metals\metals (H2 2.1)
+2023.07.13 23:44:44 WARN  resetting database: D:\Git\FP\fpinscala\.metals\metals.h2.db
+2023.07.13 23:44:45 ERROR unable to setup persistent H2 database with AUTO_SERVER=false, falling back to in-memory database. This means you may be redundantly asked to execute 'Import build', even if it's not needed. Also, code navigation will not work for existing files in the .metals/readonly/ directory. To fix this problem, make sure you only have one running Metals server in the directory 'D:\Git\FP\fpinscala'.
+org.flywaydb.core.api.FlywayException: Unable to execute clean as it has been disabled with the 'flyway.cleanDisabled' property.
+	at org.flywaydb.core.internal.command.clean.DbClean.clean(DbClean.java:56)
+	at org.flywaydb.core.Flyway.doClean(Flyway.java:397)
+	at org.flywaydb.core.Flyway.lambda$clean$2(Flyway.java:235)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:196)
+	at org.flywaydb.core.Flyway.clean(Flyway.java:234)
+	at scala.meta.internal.metals.Tables.migrateOrRestart(Tables.scala:156)
+	at scala.meta.internal.metals.Tables.tryUrl(Tables.scala:144)
+	at scala.meta.internal.metals.Tables.persistentConnection(Tables.scala:138)
+	at scala.meta.internal.metals.Tables.tryNoAutoServer(Tables.scala:98)
+	at scala.meta.internal.metals.Tables.tryAutoServer(Tables.scala:92)
+	at scala.meta.internal.metals.Tables.connect(Tables.scala:48)
+	at scala.meta.internal.metals.Tables.connection(Tables.scala:74)
+	at scala.meta.internal.metals.Tables.$anonfun$fingerprints$1(Tables.scala:39)
+	at scala.meta.internal.metals.Fingerprints.load(Fingerprints.scala:52)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$initialize$2(MetalsLspService.scala:876)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+7월 13, 2023 11:44:45 오후 org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:mem:metals (H2 2.1)
+7월 13, 2023 11:44:46 오후 org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFO: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+7월 13, 2023 11:44:46 오후 org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.026s)
+7월 13, 2023 11:44:46 오후 org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+7월 13, 2023 11:44:46 오후 org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": << Empty Schema >>
+7월 13, 2023 11:44:46 오후 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "1 - Create tables"
+7월 13, 2023 11:44:46 오후 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "2 - Server discovery"
+7월 13, 2023 11:44:46 오후 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+7월 13, 2023 11:44:46 오후 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+7월 13, 2023 11:44:46 오후 org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.102s)
+2023.07.13 23:44:46 INFO  time: initialize in 2.89s
+2023.07.13 23:44:51 WARN  Build server is not auto-connectable.
+2023.07.13 23:44:52 WARN  no build target for: D:\Git\FP\fpinscala\Chapter5\src\main\scala\LazyList.scala
+2023.07.13 23:45:04 INFO  no build target found for D:\Git\FP\fpinscala\Chapter5\src\main\scala\LazyList.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.07.14 00:02:20 INFO  Shutting down server
+2023.07.14 00:02:20 INFO  shutting down Metals
+2023.07.14 00:02:20 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequest failed with message: Canceled
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2023.07.14 00:02:20 INFO  Exiting server
+2023.07.22 13:40:00 INFO  Started: Metals version 1.0.0 in folders 'D:\Git\FP\fpinscala' for client Visual Studio Code 1.80.1.
+7월 22, 2023 1:40:00 오후 org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.20.1 by Redgate
+7월 22, 2023 1:40:00 오후 org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+7월 22, 2023 1:40:00 오후 org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+7월 22, 2023 1:40:02 오후 org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Git\FP\fpinscala\.metals\metals (H2 2.1)
+2023.07.22 13:40:02 WARN  resetting database: D:\Git\FP\fpinscala\.metals\metals.h2.db
+2023.07.22 13:40:02 ERROR org.flywaydb.core.api.FlywayException: Unable to execute clean as it has been disabled with the 'flyway.cleanDisabled' property.
+	at org.flywaydb.core.internal.command.clean.DbClean.clean(DbClean.java:57)
+	at org.flywaydb.core.Flyway.doClean(Flyway.java:395)
+	at org.flywaydb.core.Flyway.lambda$clean$2(Flyway.java:235)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:196)
+	at org.flywaydb.core.Flyway.clean(Flyway.java:234)
+	at scala.meta.internal.metals.Tables.migrateOrRestart(Tables.scala:156)
+	at scala.meta.internal.metals.Tables.tryUrl(Tables.scala:144)
+	at scala.meta.internal.metals.Tables.persistentConnection(Tables.scala:138)
+	at scala.meta.internal.metals.Tables.tryAutoServer(Tables.scala:81)
+	at scala.meta.internal.metals.Tables.connect(Tables.scala:48)
+	at scala.meta.internal.metals.Tables.connection(Tables.scala:74)
+	at scala.meta.internal.metals.Tables.$anonfun$fingerprints$1(Tables.scala:39)
+	at scala.meta.internal.metals.Fingerprints.load(Fingerprints.scala:52)
+	at scala.meta.internal.metals.MetalsLspService.loadFingerPrints(MetalsLspService.scala:848)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$3(WorkspaceLspService.scala:993)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$3$adapted(WorkspaceLspService.scala:993)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$2(WorkspaceLspService.scala:993)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+7월 22, 2023 1:40:03 오후 org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Git\FP\fpinscala\.metals\metals (H2 2.1)
+2023.07.22 13:40:02 WARN  resetting database: D:\Git\FP\fpinscala\.metals\metals.h2.db
+2023.07.22 13:40:03 ERROR unable to setup persistent H2 database with AUTO_SERVER=false, falling back to in-memory database. This means you may be redundantly asked to execute 'Import build', even if it's not needed. Also, code navigation will not work for existing files in the .metals/readonly/ directory. To fix this problem, make sure you only have one running Metals server in the directory 'D:\Git\FP\fpinscala'.
+org.flywaydb.core.api.FlywayException: Unable to execute clean as it has been disabled with the 'flyway.cleanDisabled' property.
+	at org.flywaydb.core.internal.command.clean.DbClean.clean(DbClean.java:57)
+	at org.flywaydb.core.Flyway.doClean(Flyway.java:395)
+	at org.flywaydb.core.Flyway.lambda$clean$2(Flyway.java:235)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:196)
+	at org.flywaydb.core.Flyway.clean(Flyway.java:234)
+	at scala.meta.internal.metals.Tables.migrateOrRestart(Tables.scala:156)
+	at scala.meta.internal.metals.Tables.tryUrl(Tables.scala:144)
+	at scala.meta.internal.metals.Tables.persistentConnection(Tables.scala:138)
+	at scala.meta.internal.metals.Tables.tryNoAutoServer(Tables.scala:98)
+	at scala.meta.internal.metals.Tables.tryAutoServer(Tables.scala:92)
+	at scala.meta.internal.metals.Tables.connect(Tables.scala:48)
+	at scala.meta.internal.metals.Tables.connection(Tables.scala:74)
+	at scala.meta.internal.metals.Tables.$anonfun$fingerprints$1(Tables.scala:39)
+	at scala.meta.internal.metals.Fingerprints.load(Fingerprints.scala:52)
+	at scala.meta.internal.metals.MetalsLspService.loadFingerPrints(MetalsLspService.scala:848)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$3(WorkspaceLspService.scala:993)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$3$adapted(WorkspaceLspService.scala:993)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$2(WorkspaceLspService.scala:993)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+7월 22, 2023 1:40:03 오후 org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:mem:metals (H2 2.1)
+7월 22, 2023 1:40:03 오후 org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFO: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+7월 22, 2023 1:40:03 오후 org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.008s)
+7월 22, 2023 1:40:03 오후 org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+7월 22, 2023 1:40:03 오후 org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": << Empty Schema >>
+7월 22, 2023 1:40:03 오후 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "1 - Create tables"
+7월 22, 2023 1:40:03 오후 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "2 - Server discovery"
+7월 22, 2023 1:40:03 오후 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+7월 22, 2023 1:40:03 오후 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+7월 22, 2023 1:40:03 오후 org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.056s)
+2023.07.22 13:40:03 INFO  time: initialize in 3.44s
+2023.07.22 13:40:18 WARN  Build server is not auto-connectable.
+2023.07.22 13:40:19 WARN  no build target for: D:\Git\FP\fpinscala\Chapter5\src\main\scala\LazyList.scala
+2023.07.22 13:40:36 INFO  no build target found for D:\Git\FP\fpinscala\Chapter5\src\main\scala\LazyList.scala. Using presentation compiler with project's scala-library version: 3.3.0
+7월 22, 2023 1:42:28 오후 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 22, 2023 1:42:30 오후 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.07.22 13:42:37 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+7월 22, 2023 1:42:38 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16
+2023.07.22 13:43:49 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+7월 22, 2023 1:45:45 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 99
+2023.07.22 13:46:05 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.22 13:46:25 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.22 13:46:25 INFO  skipping build import with status 'Dismissed'
+7월 22, 2023 1:46:29 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 144
+2023.07.22 13:47:30 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.22 13:47:30 INFO  skipping build import with status 'Dismissed'
+2023.07.22 13:48:22 WARN  no build target for: D:\Git\FP\fpinscala\Parsers\src\main\scala\ParserDemo.scala
+2023.07.22 13:48:31 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\scala\ParserDemo.scala
+2023.07.22 13:48:40 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\scala\Parsers.scala
+2023.07.22 13:48:50 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\scala\SimpleParser.scala
+2023.07.22 13:49:13 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\ParserDemo.scala
+2023.07.22 13:49:14 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\Parsers.scala
+2023.07.22 13:49:14 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\SimpleParser.scala
+7월 22, 2023 1:49:17 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 262
+2023.07.22 13:49:43 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\api\Parsers.scala
+2023.07.22 13:49:47 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\api\SimpleParser.scala
+7월 22, 2023 1:50:07 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 281
+2023.07.22 13:50:10 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\fpinscala\api\SimpleParser.scala
+2023.07.22 13:50:10 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\fpinscala\api\Parsers.scala
+7월 22, 2023 1:50:10 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 282
+2023.07.22 13:50:11 INFO  time: code lens generation in 1.38s
+2023.07.22 13:50:11 INFO  time: code lens generation in 1.51s
+2023.07.22 13:50:19 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\fpinscala\ParserDemo.scala
+7월 22, 2023 1:50:21 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690001421522
+2023.07.22 13:50:37 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\fpinscala\api\parser\Parsers.scala
+2023.07.22 13:50:43 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\fpinscala\api\parser\SimpleParser.scala
+2023.07.22 13:51:16 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\fpinscala\api\ParserDemo.scala
+7월 22, 2023 1:51:31 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 367
+2023.07.22 13:51:52 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\fpinscala\api\ParserDemo.scala
+2023.07.22 14:11:09 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\Rng.scala
+2023.07.22 14:11:17 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\RngDemo.scala
+2023.07.22 14:11:38 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\state\State.scala
+7월 22, 2023 2:12:40 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 410
+2023.07.22 14:12:47 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\Rng.scala
+2023.07.22 14:12:54 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\RngDemo.scala
+7월 22, 2023 2:13:05 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 426
+7월 22, 2023 2:13:05 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 427
+7월 22, 2023 2:13:05 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 428
+7월 22, 2023 2:13:05 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 429
+7월 22, 2023 2:13:05 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 430
+7월 22, 2023 2:13:05 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 431
+7월 22, 2023 2:13:05 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 432
+7월 22, 2023 2:13:05 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 433
+7월 22, 2023 2:13:05 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 435
+7월 22, 2023 2:13:10 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 444
+7월 22, 2023 2:13:10 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 445
+7월 22, 2023 2:13:10 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 446
+7월 22, 2023 2:13:10 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 448
+7월 22, 2023 2:13:10 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 449
+2023.07.22 14:13:15 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\RngDemo.scala
+2023.07.22 14:13:15 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\Rng.scala
+2023.07.22 14:13:42 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+7월 22, 2023 2:13:42 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 476
+7월 22, 2023 2:13:42 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 479
+7월 22, 2023 2:13:42 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 480
+7월 22, 2023 2:13:43 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 487
+7월 22, 2023 2:13:48 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 501
+2023.07.22 14:14:03 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\RandDemo.scala
+2023.07.22 14:14:19 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\RandDemo.scala
+2023.07.22 14:14:19 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+2023.07.22 14:14:41 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\State.scala
+7월 22, 2023 2:14:43 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 569
+7월 22, 2023 2:14:43 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 570
+2023.07.22 14:14:54 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\State.scala
+2023.07.22 14:14:55 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\StateDemo.scala
+7월 22, 2023 2:14:56 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 595
+7월 22, 2023 2:14:59 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 600
+7월 22, 2023 2:14:59 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 601
+7월 22, 2023 2:14:59 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 602
+7월 22, 2023 2:14:59 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 599
+7월 22, 2023 2:14:59 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 604
+7월 22, 2023 2:15:00 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 608
+7월 22, 2023 2:15:00 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 609
+7월 22, 2023 2:15:00 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 610
+2023.07.22 14:15:19 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\StateDemo.scala
+2023.07.22 14:15:22 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\test\scala\StateTests.scala
+7월 22, 2023 2:15:27 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 643
+7월 22, 2023 2:15:27 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 644
+2023.07.22 14:15:38 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\test\scala\StateTests.scala
+Exception in thread "pool-5-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:229)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023.07.22 14:15:47 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\fpinscala\api\ParserDemo.scala
+2023.07.22 14:16:08 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\fpinscala\api\parser\Parsers.scala
+2023.07.22 14:16:59 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\fpinscala\api\parser\SimpleParser.scala
+7월 22, 2023 2:19:24 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 801
+2023.07.22 14:19:28 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\StateDemo.scala
+2023.07.22 14:19:28 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\Rng.scala
+2023.07.22 14:19:52 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\Rng.scala
+2023.07.22 14:20:14 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\StateDemo.scala
+2023.07.22 14:20:21 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\StateDemo.scala
+7월 22, 2023 2:21:19 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 924
+7월 22, 2023 2:25:51 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1478
+7월 22, 2023 2:26:50 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1667
+7월 22, 2023 2:27:25 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1819
+2023.07.22 14:27:44 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+2023.07.22 14:27:51 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+2023.07.22 14:28:19 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+7월 22, 2023 2:29:31 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1945
+2023.07.22 14:31:09 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+2023.07.22 14:32:47 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+2023.07.22 14:33:23 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+2023.07.22 14:34:26 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+2023.07.22 14:34:53 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+2023.07.22 14:36:05 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+2023.07.22 14:36:40 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\RandDemo.scala
+2023.07.22 14:36:48 WARN  Using indexes to guess the definition of randDoubleInt
+7월 22, 2023 2:37:11 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2507
+2023.07.22 14:37:15 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\fpinscala\api\ParserDemo.scala
+2023.07.22 14:38:34 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+7월 22, 2023 2:38:37 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2587
+2023.07.22 14:38:43 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.22 14:40:45 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+2023.07.22 14:41:21 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\Rng.scala
+2023.07.22 14:41:43 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.22 14:42:11 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.22 14:45:48 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+2023.07.22 14:46:35 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\RandDemo.scala
+2023.07.22 14:47:35 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+7월 22, 2023 2:48:05 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690004885320
+7월 22, 2023 2:49:01 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2818
+7월 22, 2023 2:49:06 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2823
+7월 22, 2023 2:51:21 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2876
+7월 22, 2023 2:51:38 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2908
+2023.07.22 14:51:52 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+2023.07.22 14:53:04 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\Commons.scala
+7월 22, 2023 2:53:09 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2958
+7월 22, 2023 2:53:09 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2959
+7월 22, 2023 2:53:09 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2963
+7월 22, 2023 2:53:09 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2964
+7월 22, 2023 2:53:09 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2967
+7월 22, 2023 2:53:09 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2968
+7월 22, 2023 2:53:09 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2972
+7월 22, 2023 2:53:09 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2973
+2023.07.22 14:54:17 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\Commons.scala
+2023.07.22 14:54:17 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\Rng.scala
+2023.07.22 14:54:59 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+7월 22, 2023 2:55:08 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3137
+2023.07.22 14:55:17 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+2023.07.22 14:55:40 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\Rng.scala
+2023.07.22 14:56:03 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\StateDemo.scala
+7월 22, 2023 2:57:00 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3238
+2023.07.22 14:57:12 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\StateDemo.scala
+7월 22, 2023 2:57:53 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3303
+2023.07.22 14:57:58 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\RandDemo.scala
+2023.07.22 14:58:05 WARN  Using indexes to guess the definition of randDoubleInt
+2023.07.22 14:58:05 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\RngDemo.scala
+2023.07.22 14:58:38 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\RngDemo.scala
+7월 22, 2023 2:59:40 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3473
+7월 22, 2023 3:00:51 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3562
+2023.07.22 15:01:31 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\StateDemo.scala
+2023.07.22 15:02:32 WARN  Using indexes to guess the definition of int
+2023.07.22 15:03:46 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\State.scala
+7월 22, 2023 3:07:54 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3747
+7월 22, 2023 3:09:18 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3766
+2023.07.22 15:12:03 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\Rng.scala
+2023.07.22 15:12:03 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\StateDemo.scala
+2023.07.22 15:12:39 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\RngDemo.scala
+2023.07.22 15:12:39 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\Rng.scala
+7월 22, 2023 3:12:39 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3834
+2023.07.22 15:16:05 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.22 15:16:29 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\Rng.scala
+2023.07.22 15:16:39 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\RngDemo.scala
+2023.07.22 15:16:59 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+7월 22, 2023 3:17:36 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4127
+2023.07.22 15:18:25 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.22 15:19:20 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+2023.07.22 15:19:35 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\RandDemo.scala
+2023.07.22 15:20:10 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\RandDemo.scala
+7월 22, 2023 3:20:28 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4559
+2023.07.22 15:20:33 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+2023.07.22 15:21:13 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\RandDemo.scala
+2023.07.22 15:21:24 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\State.scala
+2023.07.22 15:21:33 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\StateDemo.scala
+2023.07.22 15:23:09 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\StateDemo.scala
+2023.07.22 15:23:25 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.22 15:23:50 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\StateDemo.scala
+2023.07.22 15:26:16 WARN  Using indexes to guess the definition of RNG
+2023.07.22 15:26:23 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+7월 22, 2023 3:26:24 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4795
+7월 22, 2023 3:27:07 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4810
+2023.07.22 15:27:35 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\StateDemo.scala
+2023.07.22 15:28:13 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\StateDemo.scala
+2023.07.22 15:28:44 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\StateDemo.scala
+2023.07.22 15:29:49 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+7월 22, 2023 3:30:03 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4971
+2023.07.22 15:30:09 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+7월 22, 2023 3:30:21 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4996
+7월 22, 2023 3:30:22 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4999
+2023.07.22 15:32:11 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.22 15:35:52 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\Rng.scala
+2023.07.22 15:36:08 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.22 15:41:08 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\StateDemo.scala
+2023.07.22 15:41:39 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\RngDemo.scala
+2023.07.22 15:42:39 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\RngDemo.scala
+2023.07.22 15:43:09 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\RngDemo.scala
+2023.07.22 15:43:18 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\Rng.scala
+2023.07.22 15:43:36 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\Rng.scala
+2023.07.22 15:44:15 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\RngDemo.scala
+2023.07.22 15:45:13 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\Rng.scala
+2023.07.22 15:45:40 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+2023.07.22 15:45:41 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\Rng.scala
+2023.07.22 15:47:20 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\RngDemo.scala
+2023.07.22 15:47:57 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+2023.07.22 15:48:22 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+2023.07.22 15:48:45 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+2023.07.22 15:49:04 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\RandDemo.scala
+7월 22, 2023 3:49:24 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5695
+2023.07.22 15:49:44 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\RandDemo.scala
+7월 22, 2023 3:49:48 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5731
+2023.07.22 15:49:51 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\RandDemo.scala
+7월 22, 2023 3:49:52 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5742
+2023.07.22 15:50:59 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\Rng.scala
+7월 22, 2023 3:51:30 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5879
+2023.07.22 15:52:14 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\RngDemo.scala
+2023.07.22 15:52:50 ERROR scalafmt: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\RandDemo.scala:51: error: [dialect scala3future] ) expected but } found
+}
+^
+2023.07.22 15:52:50 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\RandDemo.scala
+2023.07.22 15:53:27 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\RandDemo.scala
+2023.07.22 15:53:46 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\RandDemo.scala
+2023.07.22 15:53:55 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\RandDemo.scala
+2023.07.22 15:54:02 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\State.scala
+7월 22, 2023 3:54:27 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6245
+2023.07.22 15:55:06 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\StateDemo.scala
+2023.07.22 15:57:05 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\RandDemo.scala
+2023.07.22 15:57:42 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\datatypes\StateDemo.scala
+2023.07.22 15:58:16 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\test\scala\StateTests.scala
+2023.07.22 15:58:57 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\Rng.scala
+2023.07.22 15:59:26 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rng\RngDemo.scala
+2023.07.22 16:00:08 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+2023.07.22 16:00:41 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\RandDemo.scala
+2023.07.22 16:02:21 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\RandDemo.scala
+2023.07.22 16:02:21 WARN  no build target for: D:\Git\FP\fpinscala\Chapter6\src\main\scala\fpinscala\rand\Rand.scala
+2023.07.22 16:05:21 WARN  no build target for: D:\Git\FP\fpinscala\Chapter5\src\main\scala\fpinscala\datatypes\LazyList.scala
+2023.07.22 16:05:52 WARN  no build target for: D:\Git\FP\fpinscala\Chapter5\src\main\scala\fpinscala\datatypes\LazyListDemo.scala
+2023.07.22 16:06:06 WARN  no build target for: D:\Git\FP\fpinscala\Chapter5\src\main\scala\fpinscala\datatypes\LazyListDemo.scala
+2023.07.22 16:06:06 WARN  no build target for: D:\Git\FP\fpinscala\Chapter5\src\main\scala\fpinscala\datatypes\LazyList.scala
+2023.07.22 16:08:31 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Option.scala
+2023.07.22 16:08:43 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Option.scala
+2023.07.22 16:08:45 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\OptionDemo.scala
+7월 22, 2023 4:08:47 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6562
+2023.07.22 16:08:55 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\OptionDemo.scala
+2023.07.22 16:08:58 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Either.scala
+2023.07.22 16:09:11 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\EitherDemo.scala
+2023.07.22 16:09:30 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\EitherDemo.scala
+2023.07.22 16:09:31 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Either.scala
+2023.07.22 16:09:33 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Validated.scala
+2023.07.22 16:09:55 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Validated.scala
+2023.07.22 16:10:14 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\test\scala\ValidatedTest.scala
+7월 22, 2023 4:10:47 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6808
+2023.07.22 16:10:54 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\test\scala\ValidatedTest.scala
+Exception in thread "pool-5-thread-2" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:229)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+7월 22, 2023 4:11:09 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6844
+2023.07.22 16:21:23 INFO  Started: Metals version 1.0.0 in folders 'D:\Git\FP\fpinscala' for client Visual Studio Code 1.80.1.
+7월 22, 2023 4:21:24 오후 org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.20.1 by Redgate
+7월 22, 2023 4:21:24 오후 org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+7월 22, 2023 4:21:24 오후 org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+7월 22, 2023 4:21:27 오후 org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Git\FP\fpinscala\.metals\metals (H2 2.1)
+2023.07.22 16:21:28 WARN  resetting database: D:\Git\FP\fpinscala\.metals\metals.h2.db
+2023.07.22 16:21:28 ERROR org.flywaydb.core.api.FlywayException: Unable to execute clean as it has been disabled with the 'flyway.cleanDisabled' property.
+	at org.flywaydb.core.internal.command.clean.DbClean.clean(DbClean.java:57)
+	at org.flywaydb.core.Flyway.doClean(Flyway.java:395)
+	at org.flywaydb.core.Flyway.lambda$clean$2(Flyway.java:235)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:196)
+	at org.flywaydb.core.Flyway.clean(Flyway.java:234)
+	at scala.meta.internal.metals.Tables.migrateOrRestart(Tables.scala:156)
+	at scala.meta.internal.metals.Tables.tryUrl(Tables.scala:144)
+	at scala.meta.internal.metals.Tables.persistentConnection(Tables.scala:138)
+	at scala.meta.internal.metals.Tables.tryAutoServer(Tables.scala:81)
+	at scala.meta.internal.metals.Tables.connect(Tables.scala:48)
+	at scala.meta.internal.metals.Tables.connection(Tables.scala:74)
+	at scala.meta.internal.metals.Tables.$anonfun$fingerprints$1(Tables.scala:39)
+	at scala.meta.internal.metals.Fingerprints.load(Fingerprints.scala:52)
+	at scala.meta.internal.metals.MetalsLspService.loadFingerPrints(MetalsLspService.scala:848)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$3(WorkspaceLspService.scala:993)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$3$adapted(WorkspaceLspService.scala:993)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$2(WorkspaceLspService.scala:993)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+7월 22, 2023 4:21:29 오후 org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Git\FP\fpinscala\.metals\metals (H2 2.1)
+2023.07.22 16:21:29 WARN  resetting database: D:\Git\FP\fpinscala\.metals\metals.h2.db
+2023.07.22 16:21:29 ERROR unable to setup persistent H2 database with AUTO_SERVER=false, falling back to in-memory database. This means you may be redundantly asked to execute 'Import build', even if it's not needed. Also, code navigation will not work for existing files in the .metals/readonly/ directory. To fix this problem, make sure you only have one running Metals server in the directory 'D:\Git\FP\fpinscala'.
+org.flywaydb.core.api.FlywayException: Unable to execute clean as it has been disabled with the 'flyway.cleanDisabled' property.
+	at org.flywaydb.core.internal.command.clean.DbClean.clean(DbClean.java:57)
+	at org.flywaydb.core.Flyway.doClean(Flyway.java:395)
+	at org.flywaydb.core.Flyway.lambda$clean$2(Flyway.java:235)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:196)
+	at org.flywaydb.core.Flyway.clean(Flyway.java:234)
+	at scala.meta.internal.metals.Tables.migrateOrRestart(Tables.scala:156)
+	at scala.meta.internal.metals.Tables.tryUrl(Tables.scala:144)
+	at scala.meta.internal.metals.Tables.persistentConnection(Tables.scala:138)
+	at scala.meta.internal.metals.Tables.tryNoAutoServer(Tables.scala:98)
+	at scala.meta.internal.metals.Tables.tryAutoServer(Tables.scala:92)
+	at scala.meta.internal.metals.Tables.connect(Tables.scala:48)
+	at scala.meta.internal.metals.Tables.connection(Tables.scala:74)
+	at scala.meta.internal.metals.Tables.$anonfun$fingerprints$1(Tables.scala:39)
+	at scala.meta.internal.metals.Fingerprints.load(Fingerprints.scala:52)
+	at scala.meta.internal.metals.MetalsLspService.loadFingerPrints(MetalsLspService.scala:848)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$3(WorkspaceLspService.scala:993)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$3$adapted(WorkspaceLspService.scala:993)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$2(WorkspaceLspService.scala:993)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+7월 22, 2023 4:21:30 오후 org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:mem:metals (H2 2.1)
+7월 22, 2023 4:21:30 오후 org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFO: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+7월 22, 2023 4:21:30 오후 org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.010s)
+7월 22, 2023 4:21:30 오후 org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+7월 22, 2023 4:21:30 오후 org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": << Empty Schema >>
+7월 22, 2023 4:21:30 오후 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "1 - Create tables"
+7월 22, 2023 4:21:30 오후 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "2 - Server discovery"
+7월 22, 2023 4:21:30 오후 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+7월 22, 2023 4:21:30 오후 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+7월 22, 2023 4:21:30 오후 org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.131s)
+2023.07.22 16:21:30 INFO  time: initialize in 6.86s
+2023.07.22 16:21:40 WARN  Build server is not auto-connectable.
+2023.07.22 16:21:40 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\test\scala\ValidatedTest.scala
+2023.07.22 16:21:58 INFO  no build target found for D:\Git\FP\fpinscala\Chapter4\src\test\scala\ValidatedTest.scala. Using presentation compiler with project's scala-library version: 3.3.0
+2023.07.22 16:22:06 INFO  time: code lens generation in 23s
+2023.07.22 16:24:01 WARN  no build target for: D:\Git\FP\fpinscala\Chapter3\src\main\scala\fpinscala\datatypes\List.scala
+2023.07.22 16:24:03 INFO  time: code lens generation in 1.2s
+7월 22, 2023 4:24:15 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 44
+2023.07.22 16:24:15 WARN  no build target for: D:\Git\FP\fpinscala\Chapter3\src\main\scala\fpinscala\datatypes\ListDemo.scala
+2023.07.22 16:24:16 WARN  no build target for: D:\Git\FP\fpinscala\Chapter3\src\main\scala\fpinscala\datatypes\List.scala
+2023.07.22 16:24:17 INFO  time: code lens generation in 1.76s
+2023.07.22 16:24:29 WARN  no build target for: D:\Git\FP\fpinscala\Chapter3\src\main\scala\fpinscala\datatypes\ListDemo.scala
+2023.07.22 16:24:31 WARN  no build target for: D:\Git\FP\fpinscala\Chapter3\src\main\scala\fpinscala\datatypes\Tree.scala
+2023.07.22 16:24:42 WARN  no build target for: D:\Git\FP\fpinscala\Chapter3\src\main\scala\fpinscala\datatypes\Tree.scala
+2023.07.22 16:24:54 WARN  no build target for: D:\Git\FP\fpinscala\Chapter3\src\test\scala\ListTest.scala
+2023.07.22 16:25:15 WARN  no build target for: D:\Git\FP\fpinscala\Chapter3\src\test\scala\ListTest.scala
+2023.07.22 16:25:17 WARN  no build target for: D:\Git\FP\fpinscala\Chapter3\src\test\scala\TreeTest.scala
+2023.07.22 16:25:42 WARN  no build target for: D:\Git\FP\fpinscala\Chapter3\src\test\scala\TreeTest.scala
+2023.07.22 16:27:16 WARN  no build target for: D:\Git\FP\fpinscala\Chapter2\src\main\scala\FirstScala.scala
+2023.07.22 16:27:38 WARN  no build target for: D:\Git\FP\fpinscala\Chapter3\src\test\scala\TreeTest.scala
+2023.07.22 16:28:11 WARN  no build target for: D:\Git\FP\fpinscala\Chapter2\src\main\scala\fpinscala\functions\FirstScala.scala
+2023.07.22 16:28:31 WARN  no build target for: D:\Git\FP\fpinscala\Chapter2\src\main\scala\fpinscala\functions\FirstScala.scala
+2023.07.22 16:28:33 WARN  no build target for: D:\Git\FP\fpinscala\Chapter2\src\main\scala\fpinscala\functions\HoF.scala
+2023.07.22 16:28:38 WARN  no build target for: D:\Git\FP\fpinscala\Chapter2\src\main\scala\fpinscala\functions\HoF.scala
+2023.07.22 16:28:40 WARN  no build target for: D:\Git\FP\fpinscala\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.22 16:28:46 WARN  no build target for: D:\Git\FP\fpinscala\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.22 16:29:04 WARN  no build target for: D:\Git\FP\fpinscala\Chapter1\src\main\scala\Cafe.scala
+2023.07.22 16:29:24 WARN  no build target for: D:\Git\FP\fpinscala\Chapter1\src\main\scala\fpinscala\intro\Cafe.scala
+2023.07.22 16:29:32 WARN  no build target for: D:\Git\FP\fpinscala\Chapter1\src\main\scala\fpinscala\intro\Cafe.scala
+2023.07.22 16:29:45 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.22 16:30:43 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.22 16:31:30 WARN  no build target for: D:\Git\FP\fpinscala\Chapter1\src\main\scala\fpinscala\intro\Cafe.scala
+2023.07.22 16:31:56 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\variances\Variances.scala
+2023.07.22 16:32:26 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\variances\Variances.scala
+2023.07.22 16:32:31 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\for_comprehension\ForComp.scala
+2023.07.22 16:33:13 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\for_comprehension\ForComp.scala
+2023.07.22 16:33:19 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\variances\Variances.scala
+2023.07.22 16:33:28 WARN  no build target for: D:\Git\FP\fpinscala\Chapter2\src\main\scala\fpinscala\functions\FirstScala.scala
+2023.07.22 16:33:31 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\variances\Variances.scala
+2023.07.22 16:33:37 WARN  no build target for: D:\Git\FP\fpinscala\Chapter2\src\main\scala\fpinscala\functions\HoF.scala
+2023.07.22 16:33:43 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\expression_problem\fp\FpExpr.scala
+2023.07.22 16:33:45 WARN  no build target for: D:\Git\FP\fpinscala\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.22 16:33:50 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\expression_problem\oo\OOExpr.scala
+2023.07.22 16:34:00 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\expression_problem\typeclass\Expr.scala
+2023.07.22 16:34:43 WARN  no build target for: D:\Git\FP\fpinscala\Chapter5\src\main\scala\fpinscala\datatypes\LazyList.scala
+2023.07.22 16:35:38 WARN  no build target for: D:\Git\FP\fpinscala\Chapter3\src\test\scala\TreeTest.scala
+2023.07.22 16:38:28 WARN  no build target for: D:\Git\FP\fpinscala\Chapter2\src\main\scala\fpinscala\functions\FirstScala.scala
+2023.07.22 16:38:37 WARN  no build target for: D:\Git\FP\fpinscala\Chapter2\src\main\scala\fpinscala\functions\HoF.scala
+2023.07.22 16:38:45 WARN  no build target for: D:\Git\FP\fpinscala\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.22 16:39:30 WARN  no build target for: D:\Git\FP\fpinscala\Chapter1\src\main\scala\fpinscala\intro\Cafe.scala
+7월 22, 2023 5:11:44 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 774
+7월 22, 2023 5:28:23 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 944
+2023.07.22 18:09:54 WARN  no build target for: D:\Git\FP\fpinscala\Chapter5\src\main\scala\fpinscala\datatypes\LazyList.scala
+2023.07.22 18:10:05 WARN  no build target for: D:\Git\FP\fpinscala\Chapter5\src\main\scala\fpinscala\datatypes\LazyList.scala
+2023.07.22 18:10:09 WARN  no build target for: D:\Git\FP\fpinscala\Chapter5\src\main\scala\fpinscala\datatypes\LazyList.scala
+2023.07.22 18:10:36 WARN  no build target for: D:\Git\FP\fpinscala\Chapter5\src\main\scala\fpinscala\datatypes\LazyList.scala
+2023.07.22 18:11:09 WARN  no build target for: D:\Git\FP\fpinscala\Chapter5\src\main\scala\fpinscala\datatypes\LazyList.scala
+2023.07.22 18:12:55 WARN  no build target for: D:\Git\FP\fpinscala\Chapter5\src\main\scala\fpinscala\datatypes\LazyList.scala
+2023.07.22 18:18:17 WARN  no build target for: D:\Git\FP\fpinscala\Chapter1\src\main\scala\fpinscala\intro\CafeDemo.scala
+2023.07.22 18:18:29 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.22 18:22:26 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\parameter_passing\Parameters.scala
+2023.07.22 20:24:26 WARN  no build target for: D:\Git\FP\fpinscala\Chapter5\src\main\scala\fpinscala\datatypes\LazyList.scala
+7월 22, 2023 8:24:46 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1464
+2023.07.22 20:54:10 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Either.scala
+2023.07.22 20:54:26 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Either.scala
+2023.07.22 21:12:43 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\test\scala\ValidatedTest.scala
+2023.07.22 21:24:17 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Validated.scala
+7월 22, 2023 9:28:08 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1770
+7월 22, 2023 9:28:15 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1806
+2023.07.22 21:28:31 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Validated.scala
+7월 22, 2023 9:28:31 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690028911499
+7월 22, 2023 9:28:32 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690028912319
+7월 22, 2023 9:28:34 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1862
+7월 22, 2023 9:28:45 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690028925468
+7월 22, 2023 9:31:29 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029089019
+7월 22, 2023 9:31:34 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029094320
+7월 22, 2023 9:31:35 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029095893
+7월 22, 2023 9:31:37 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029097059
+7월 22, 2023 9:31:37 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029097809
+7월 22, 2023 9:31:40 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029100759
+7월 22, 2023 9:31:43 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029103205
+7월 22, 2023 9:31:43 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029103801
+7월 22, 2023 9:31:45 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029105955
+7월 22, 2023 9:31:48 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029108240
+7월 22, 2023 9:31:49 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029109549
+7월 22, 2023 9:31:51 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029111942
+7월 22, 2023 9:31:52 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029112581
+7월 22, 2023 9:31:54 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029114677
+7월 22, 2023 9:31:55 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029115630
+7월 22, 2023 9:31:57 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029117316
+7월 22, 2023 9:32:02 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029122407
+7월 22, 2023 9:32:08 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029128526
+7월 22, 2023 9:32:10 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029130711
+7월 22, 2023 9:32:11 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029131423
+7월 22, 2023 9:32:13 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2030
+7월 22, 2023 9:32:13 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2032
+7월 22, 2023 9:32:13 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2033
+7월 22, 2023 9:32:13 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2034
+7월 22, 2023 9:32:13 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2035
+7월 22, 2023 9:32:13 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2036
+7월 22, 2023 9:32:13 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2037
+7월 22, 2023 9:32:13 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2038
+7월 22, 2023 9:32:14 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029133995
+7월 22, 2023 9:32:18 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029136738
+2023.07.22 21:32:18 INFO  time: code lens generation in 3.84s
+7월 22, 2023 9:32:23 오후 scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Git\FP\fpinscala\.metals\.reports\metals-full\r_compiler-error_1690029143564
+2023.07.22 21:32:26 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Validated.scala
+2023.07.22 21:34:25 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Validated.scala
+2023.07.22 21:34:42 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Validated.scala
+2023.07.22 21:35:14 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Validated.scala
+2023.07.22 21:35:22 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Validated.scala
+2023.07.22 21:35:44 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Validated.scala
+2023.07.22 21:36:09 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Validated.scala
+2023.07.22 21:36:26 ERROR scalafmt: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Validated.scala:9: error: [dialect scala3future] expected template body
+enum Validated[+E, +A]:
+^
+2023.07.22 21:36:26 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Validated.scala
+2023.07.22 21:36:36 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Validated.scala
+2023.07.22 21:36:58 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.22 21:37:23 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.22 21:38:50 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.22 21:38:50 INFO  skipping build import with status 'Dismissed'
+2023.07.22 21:43:38 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.22 21:43:59 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Option.scala
+2023.07.22 21:44:14 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\EitherDemo.scala
+7월 22, 2023 9:45:12 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2751
+7월 22, 2023 9:45:14 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2765
+2023.07.22 21:47:17 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\EitherDemo.scala
+2023.07.22 21:47:17 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Either.scala
+2023.07.22 21:48:03 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Either.scala
+2023.07.22 21:49:48 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Validated.scala
+2023.07.22 21:49:48 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\test\scala\ValidatedTest.scala
+2023.07.22 21:50:18 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Validated.scala
+7월 22, 2023 9:50:47 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3242
+2023.07.22 21:50:51 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Either.scala
+2023.07.22 21:51:34 WARN  Using indexes to guess the definition of map2Both
+2023.07.22 21:52:53 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Either.scala
+2023.07.22 21:53:15 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Option.scala
+2023.07.22 21:53:18 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Either.scala
+2023.07.22 21:54:44 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\EitherDemo.scala
+2023.07.22 21:55:15 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Validated.scala
+2023.07.22 21:56:18 WARN  no build target for: D:\Git\FP\fpinscala\Chapter3\src\main\scala\fpinscala\datatypes\List.scala
+2023.07.22 21:56:52 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Either.scala
+2023.07.22 22:00:15 WARN  no build target for: D:\Git\FP\fpinscala\Chapter4\src\main\scala\fpinscala\datatypes\Validated.scala
+2023.07.22 22:01:07 WARN  no build target for: D:\Git\FP\fpinscala\Chapter3\src\main\scala\fpinscala\datatypes\List.scala
+2023.07.22 23:03:33 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\expression_problem\fp\FpExpr.scala
+2023.07.22 23:03:40 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\expression_problem\typeclass\Expr.scala
+7월 23, 2023 1:43:45 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:47:36 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:47:43 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:47:54 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:48:10 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:48:14 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:48:19 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:48:23 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:48:27 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:48:34 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:48:38 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:48:41 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:48:46 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:48:51 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:48:58 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:49:02 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:49:08 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:49:12 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:49:16 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:49:20 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:49:25 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:49:29 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:49:33 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:49:37 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:49:40 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:49:43 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:49:44 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3581
+7월 23, 2023 1:49:48 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:49:51 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:49:54 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:49:58 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:50:04 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:50:07 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:50:10 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:50:14 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:50:18 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:50:22 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:50:25 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:50:32 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:50:35 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:50:45 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:50:56 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.07.23 01:51:12 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\variances\Variances.scala
+7월 23, 2023 1:51:54 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 23, 2023 1:54:20 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3662
+2023.07.23 01:54:54 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\for_comprehension\ForComp.scala
+7월 23, 2023 2:07:40 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.07.23 02:09:30 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\for_comprehension\Desugar.scala
+2023.07.23 02:10:07 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\for_comprehension\Desugar.scala
+7월 23, 2023 2:10:22 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3843
+7월 23, 2023 2:10:42 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3953
+2023.07.23 02:11:39 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\for_comprehension\Desugar.scala
+2023.07.23 02:11:39 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\expression_problem\typeclass\Expr.scala
+2023.07.23 02:13:54 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\for_comprehension\Desugar.scala
+7월 23, 2023 2:13:58 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4196
+2023.07.23 02:14:01 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\for_comprehension\Desugar.scala
+2023.07.23 02:15:19 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\for_comprehension\Desugar.scala
+2023.07.23 02:15:45 ERROR scalafmt: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\for_comprehension\Desugar.scala:12: error: [dialect scala3future] end of file expected but } found
+}
+^
+2023.07.23 02:15:45 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\for_comprehension\Desugar.scala
+2023.07.23 02:15:47 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\for_comprehension\Desugar.scala
+7월 23, 2023 2:16:00 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4298
+2023.07.23 02:16:05 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\for_comprehension\Desugar.scala
+2023.07.23 02:17:30 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\for_comprehension\Desugar.scala
+2023.07.23 02:17:54 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\for_comprehension\Desugar.scala
+7월 23, 2023 2:20:26 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4580
+2023.07.23 02:37:53 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+7월 23, 2023 2:58:13 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4676
+2023.07.23 02:58:34 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.23 02:59:12 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\for_comprehension\ForComp.scala
+2023.07.23 02:59:17 WARN  no build target for: D:\Git\FP\fpinscala\Basics\src\main\scala\fpinscala\basics\for_comprehension\ForComp.scala
+7월 23, 2023 3:12:30 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5002
+2023.07.23 03:13:04 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.23 03:15:56 ERROR scalafmt: D:\Git\FP\fpinscala\build.sbt:16: error: [dialect scala3future] end of file expected but } found
+}
+^
+2023.07.23 03:15:56 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.23 03:16:12 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
+2023.07.23 03:16:12 INFO  skipping build import with status 'Dismissed'
