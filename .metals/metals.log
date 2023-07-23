@@ -9353,3 +9353,7 @@ WARNING: Unmatched cancel notification for request id 5002
 2023.07.23 03:15:56 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
 2023.07.23 03:16:12 WARN  no build target for: D:\Git\FP\fpinscala\build.sbt
 2023.07.23 03:16:12 INFO  skipping build import with status 'Dismissed'
+2023.07.23 11:58:00 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\fpinscala\api\parser\SimpleParser.scala
+2023.07.23 11:58:09 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\fpinscala\api\ParserDemo.scala
+2023.07.23 11:58:52 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\fpinscala\api\ParserDemo.scala
+2023.07.23 11:59:15 WARN  no build target for: D:\Git\FP\fpinscala\Parser\src\main\scala\fpinscala\api\ParserDemo.scala

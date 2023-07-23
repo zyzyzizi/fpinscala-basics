@@ -3,6 +3,7 @@ package fpinscala.api
 object ParserDemo extends App:
   import fpinscala.utils.Utils.*
   import fpinscala.rand.*
+  import fpinscala.api.parser.*
   import SimpleParser.{given, *}
 
   delim()
