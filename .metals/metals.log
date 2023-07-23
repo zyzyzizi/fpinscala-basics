@@ -9449,3 +9449,14 @@ INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (e
 2023.07.23 12:31:58 INFO  time: code lens generation in 15s
 2023.07.23 12:32:01 WARN  no build target for: D:\Git\FP\fpinscala-basics\Chapter1\src\main\scala\fpinscala\intro\Cafe.scala
 2023.07.23 12:32:04 INFO  time: code lens generation in 1.55s
+7월 23, 2023 8:42:24 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 25
+2023.07.23 23:02:31 WARN  no build target for: D:\Git\FP\fpinscala-basics\Chapter1\src\main\scala\fpinscala\intro\CafeDemo.scala
+2023.07.23 23:03:27 WARN  no build target for: D:\Git\FP\fpinscala-basics\Chapter1\src\main\scala\fpinscala\intro\Cafe.scala
+2023.07.23 23:03:40 WARN  no build target for: D:\Git\FP\fpinscala-basics\Chapter1\src\main\scala\fpinscala\intro\Cafe.scala
+7월 23, 2023 11:03:42 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 196
+2023.07.23 23:09:55 WARN  no build target for: D:\Git\FP\fpinscala-basics\Chapter1\src\main\scala\fpinscala\intro\Cafe.scala
+7월 23, 2023 11:12:04 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 277
+2023.07.23 23:12:17 WARN  no build target for: D:\Git\FP\fpinscala-basics\Chapter1\src\main\scala\fpinscala\intro\Cafe.scala

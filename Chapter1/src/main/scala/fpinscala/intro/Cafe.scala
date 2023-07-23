@@ -2,7 +2,7 @@ package fpinscala.intro
 
 object Cafes:
 
-  case class CreditCard(val kind: String)
+  case class CreditCard(kind: String)
 
   class Coffee:
     var price = 10.0
@@ -13,6 +13,7 @@ object Cafes:
       else throw new Exception("Can't combine charges to different cards")
 
   class Cafe:
+
     def buyCoffee(cc: CreditCard): (Coffee, Charge) =
       val cup = new Coffee()
       (cup, Charge(cc, cup.price))
@@ -29,19 +30,5 @@ object Cafes:
         .map(_.reduce(_ combine _))
         .toList
 
-object Demo:
-  import Cafes.*
-
-  def main(args: Array[String]): Unit =
-    val visa = CreditCard("Visa")
-    val master = CreditCard("Master")
-    val cafe = new Cafe
-
-    val (_, c1) = cafe.buyCoffees(visa, 10)
-    val (_, c2) = cafe.buyCoffees(master, 2)
-    val (_, c3) = cafe.buyCoffees(visa, 5)
-    val (_, c4) = cafe.buyCoffees(master, 3)
-
-    val charges = List(c1, c2, c3, c4)
-    val coalesced = cafe.coalesce(charges)
-    println(coalesced)
+  end Cafe
+end Cafes
