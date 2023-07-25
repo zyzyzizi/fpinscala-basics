@@ -8,7 +8,12 @@ object Recursions {
     if n <= 0 then 1
     else n * factorial(n - 1)
 
-  def factorialTR(n: Int): BigInt = ???
+  def factorialTR(n: Int): BigInt =
+    @annotation.tailrec
+    def go(n: Int, acc: BigInt): BigInt =
+      if n <= 0 then acc
+      else go(n - 1, n * acc)
+    go(n, 1)
 
   def fibonacci(n: Int): Int =
     if n <= 1 then n
@@ -16,25 +21,31 @@ object Recursions {
 
   // Exercise 2.1
   // Write a recursive function to get the nth Fibonacci number.
-  def fibonacciTR(n: Int): Int = ???
+  def fibonacciTR(n: Int): Int =
+    @annotation.tailrec
+    def go(n: Int, prev: Int, current: Int): Int =
+      if n <= 1 then current
+      else go(n - 1, current, prev + current)
+
+    go(n, 0, 1)
 
 }
 
-object recursionDemo1 /* extends App */ {
+object recursionDemo1 extends App {
   import Recursions.*
 
-//   for (i <- 1 to 20) {
-//     println(s"$i: ${factorial(i)}")
-//   }
+  // for (i <- 1 to 20) {
+  //   println(s"$i: ${factorial(i)}")
+  // }
 
-//   for i <- 1 to 20 do println(s"$i: ${factorialTR(i)}")
-//   end for
+  // for i <- 1 to 20 do println(s"$i: ${factorialTR(i)}")
+  // end for
 
-//   for i <- 1 to 45 do println(s"$i: ${fibonacci(i)}")
-//   end for
+  // for i <- 1 to 45 do println(s"$i: ${fibonacci(i)}")
+  // end for
 
-  for i <- 1 to 45 do println(s"$i: ${fibonacciTR(i)}")
-  end for
+  // for i <- 1 to 45 do println(s"$i: ${fibonacciTR(i)}")
+  // end for
 }
 
 /*

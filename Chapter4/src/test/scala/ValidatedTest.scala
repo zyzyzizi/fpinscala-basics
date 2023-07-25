@@ -3,6 +3,7 @@
 import pprint.*
 import fpinscala.datatypes.{Either, Validated}
 import Validated.*, Either.*
+import fpinscala.datatypes.ValidatedSample.*
 
 class ValidatedTest extends munit.FunSuite:
 

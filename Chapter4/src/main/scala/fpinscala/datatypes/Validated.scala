@@ -50,7 +50,7 @@ object Validated:
   def sequence[E, A](vs: List[Validated[E, A]]): Validated[E, List[A]] =
     traverse(vs, identity)
 
-object Validatedsample:
+object ValidatedSample:
   import Validated.{Invalid, Valid}
 
   case class Name private (value: String)
@@ -71,4 +71,4 @@ object Validatedsample:
     def make(name: String, age: Int): Validated[String, Person] =
       Name(name).map2(Age(age))(Person(_, _))
 
-end Validatedsample
+end ValidatedSample

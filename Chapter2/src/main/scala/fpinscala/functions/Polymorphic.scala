@@ -5,9 +5,9 @@ import fpinscala.utils.Utils.*
 /*Monomorphic functions vs. Polymporphic functions
  *
  * Monomorphic functions: works only for one type.
- * Polymorphic functions: works * for any type.
+ * Polymorphic functions: works for any type.
  */
-object PolymorphicFunctions /* extends App  */ {
+object PolymorphicFunctions extends App {
 
   /** Monomorphic function to find an Int in an array
     */
@@ -26,7 +26,7 @@ object PolymorphicFunctions /* extends App  */ {
     @annotation.tailrec
     def loop(n: Int): Int =
       if n >= ss.length then -1
-      else if ??? then n
+      else if p(ss(n)) then n
       else loop(n + 1)
     loop(0)
   }
@@ -35,61 +35,78 @@ object PolymorphicFunctions /* extends App  */ {
   // println(
   //   findFirst(Array(7, 9, 13), (x: Int) => x == 9)
   // ) // function liteal or anonymous function
-  // delim()
+  delim()
 
   // Exercise 2.2
   // Implement isSorted, which checks whether an Array[A] is sorted according
   // to a given comparison function:
-  def isSorted[A](as: Array[A], ordered: (A, A) => Boolean): Boolean = ???
+  // def isSorted[A](as: Array[A], ordered: (A, A) => Boolean): Boolean =
+  //   @annotation.tailrec
+  //   def loop(n: Int): Boolean =
+  //     if n >= as.length - 1 then true
+  //     else if ordered(as(n), as(n + 1)) then loop(n + 1)
+  //     else false
+  //   loop(0)
 
-  // println(isSorted(Array(1, 2, 3), _ > _)) // false
-  // println(isSorted(Array(1, 2, 1), _ > _)) // false
-  // println(isSorted(Array(3, 2, 1), _ < _)) // false
-  // println(isSorted(Array(1, 2, 3), _ < _)) // true
+  // 1, 2, 3, 4
+  // 2, 3, 4
+  // (1, 2), (2, 3), (3, 4)
+  def isSorted[A](as: Array[A], ordered: (A, A) => Boolean): Boolean =
+    as.zip(as.tail).forall(ordered(_, _))
+
+  println(isSorted(Array(1, 2, 3), (a, b) => a > b)) // false
+  println(isSorted(Array(1, 2, 1), _ > _)) // false
+  println(isSorted(Array(3, 2, 1), _ < _)) // false
+  println(isSorted(Array(1, 2, 3), _ < _)) // true
+
+  delim()
 }
 
 /*
  * Following types to implementations
  */
-object FollowingTypes /* extends App */ {
+object FollowingTypes extends App {
 
   // partially-applied function
-  def partial1[A, B, C](a: A, f: (A, B) => C): B => C = ???
+  def partial1[A, B, C](a: A, f: (A, B) => C): B => C = (b: B) => f(a, b)
 
   // Exercise 2.3
   // Let’s look at another example, currying, which converts a function f of two arguments
   // into a function of one argument that partially applies f. Here again there’s only one
   // implementation that compiles. Write this implementation.
-  def curry[A, B, C](f: (A, B) => C): A => (B => C) = ???
+  def curry[A, B, C](f: (A, B) => C): A => (B => C) =
+    (a: A) => { (b: B) => f(a, b) }
 
   // Exercise 2.4
   // Implement uncurry, which reverses the transformation of curry. Note that since =>
   // associates to the right, A => (B => C) can be written as A => B => C.
-  def uncurry[A, B, C](f: A => B => C): (A, B) => C = ???
+  def uncurry[A, B, C](f: A => (B => C)): (A, B) => C =
+    (a: A, b: B) => f(a)(b)
 
   // Exercise 2.5
   // Implement the higher-order function that composes two functions.
-  def compose[A, B, C](f: B => C, g: A => B): A => C = ???
+  def my_compose[A, B, C](f: B => C, g: A => B): A => C =
+    (a: A) => f(g(a))
 
-  // delim()
-  // val add = (x: Int, y: Int) => x + y
-  // val add_curried = curry(add)
-  // println(add_curried(1)(2))
+  delim()
+  val add = (x: Int, y: Int) => x + y
+  val add_curried = curry(add)
+  println(add_curried(1)(2))
 
-  // val add_uncurried = uncurry(add_curried)
-  // println(add_uncurried(1, 2))
-  // delim()
+  val add_uncurried = uncurry(add_curried)
+  println(add_uncurried(1, 2))
+  delim()
 
-  // val inc = (x: Int) => x + 1
-  // val square = (x: Int) => x * x
-  // val f = compose(square, inc)
-  // val g = inc andThen square
+  val inc = (x: Int) => x + 1
+  val square = (x: Int) => x * x
+  val f = my_compose(square, inc)
+  val g = inc andThen square
 
-  // println(f(3))
-  // println(g(3))
-  // delim()
+  println(f(3))
+  println(g(3))
+  delim()
 
-  // val h = square compose inc
-  // println(h(3))
-  // delim()
+  val h = square compose inc
+  println(h(3))
+  delim()
 }

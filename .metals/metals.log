@@ -9460,3 +9460,526 @@ WARNING: Unmatched cancel notification for request id 196
 7월 23, 2023 11:12:04 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 277
 2023.07.23 23:12:17 WARN  no build target for: D:\Git\FP\fpinscala-basics\Chapter1\src\main\scala\fpinscala\intro\Cafe.scala
+2023.07.24 12:40:30 INFO  Started: Metals version 1.0.0 in folders 'D:\git\FP\fpinscala-basics' for client Visual Studio Code 1.71.0.
+7월 24, 2023 12:40:30 오후 org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.20.1 by Redgate
+7월 24, 2023 12:40:30 오후 org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+7월 24, 2023 12:40:30 오후 org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+7월 24, 2023 12:40:30 오후 org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\git\FP\fpinscala-basics\.metals\metals (H2 2.1)
+2023.07.24 12:40:30 WARN  resetting database: D:\git\FP\fpinscala-basics\.metals\metals.h2.db
+2023.07.24 12:40:30 ERROR org.flywaydb.core.api.FlywayException: Unable to execute clean as it has been disabled with the 'flyway.cleanDisabled' property.
+	at org.flywaydb.core.internal.command.clean.DbClean.clean(DbClean.java:57)
+	at org.flywaydb.core.Flyway.doClean(Flyway.java:395)
+	at org.flywaydb.core.Flyway.lambda$clean$2(Flyway.java:235)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:196)
+	at org.flywaydb.core.Flyway.clean(Flyway.java:234)
+	at scala.meta.internal.metals.Tables.migrateOrRestart(Tables.scala:156)
+	at scala.meta.internal.metals.Tables.tryUrl(Tables.scala:144)
+	at scala.meta.internal.metals.Tables.persistentConnection(Tables.scala:138)
+	at scala.meta.internal.metals.Tables.tryAutoServer(Tables.scala:81)
+	at scala.meta.internal.metals.Tables.connect(Tables.scala:48)
+	at scala.meta.internal.metals.Tables.connection(Tables.scala:74)
+	at scala.meta.internal.metals.Tables.$anonfun$fingerprints$1(Tables.scala:39)
+	at scala.meta.internal.metals.Fingerprints.load(Fingerprints.scala:52)
+	at scala.meta.internal.metals.MetalsLspService.loadFingerPrints(MetalsLspService.scala:848)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$3(WorkspaceLspService.scala:993)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$3$adapted(WorkspaceLspService.scala:993)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$2(WorkspaceLspService.scala:993)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+7월 24, 2023 12:40:31 오후 org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\git\FP\fpinscala-basics\.metals\metals (H2 2.1)
+2023.07.24 12:40:30 WARN  resetting database: D:\git\FP\fpinscala-basics\.metals\metals.h2.db
+2023.07.24 12:40:30 ERROR unable to setup persistent H2 database with AUTO_SERVER=false, falling back to in-memory database. This means you may be redundantly asked to execute 'Import build', even if it's not needed. Also, code navigation will not work for existing files in the .metals/readonly/ directory. To fix this problem, make sure you only have one running Metals server in the directory 'D:\git\FP\fpinscala-basics'.
+org.flywaydb.core.api.FlywayException: Unable to execute clean as it has been disabled with the 'flyway.cleanDisabled' property.
+	at org.flywaydb.core.internal.command.clean.DbClean.clean(DbClean.java:57)
+	at org.flywaydb.core.Flyway.doClean(Flyway.java:395)
+	at org.flywaydb.core.Flyway.lambda$clean$2(Flyway.java:235)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:196)
+	at org.flywaydb.core.Flyway.clean(Flyway.java:234)
+	at scala.meta.internal.metals.Tables.migrateOrRestart(Tables.scala:156)
+	at scala.meta.internal.metals.Tables.tryUrl(Tables.scala:144)
+	at scala.meta.internal.metals.Tables.persistentConnection(Tables.scala:138)
+	at scala.meta.internal.metals.Tables.tryNoAutoServer(Tables.scala:98)
+	at scala.meta.internal.metals.Tables.tryAutoServer(Tables.scala:92)
+	at scala.meta.internal.metals.Tables.connect(Tables.scala:48)
+	at scala.meta.internal.metals.Tables.connection(Tables.scala:74)
+	at scala.meta.internal.metals.Tables.$anonfun$fingerprints$1(Tables.scala:39)
+	at scala.meta.internal.metals.Fingerprints.load(Fingerprints.scala:52)
+	at scala.meta.internal.metals.MetalsLspService.loadFingerPrints(MetalsLspService.scala:848)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$3(WorkspaceLspService.scala:993)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$3$adapted(WorkspaceLspService.scala:993)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$2(WorkspaceLspService.scala:993)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+7월 24, 2023 12:40:31 오후 org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:mem:metals (H2 2.1)
+7월 24, 2023 12:40:31 오후 org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFO: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+7월 24, 2023 12:40:31 오후 org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.001s)
+7월 24, 2023 12:40:31 오후 org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+7월 24, 2023 12:40:31 오후 org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": << Empty Schema >>
+7월 24, 2023 12:40:31 오후 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "1 - Create tables"
+7월 24, 2023 12:40:31 오후 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "2 - Server discovery"
+7월 24, 2023 12:40:31 오후 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+7월 24, 2023 12:40:31 오후 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+7월 24, 2023 12:40:31 오후 org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.012s)
+2023.07.24 12:40:31 INFO  time: initialize in 1.29s
+2023.07.24 12:40:32 WARN  Build server is not auto-connectable.
+2023.07.24 12:40:32 WARN  no build target for: D:\git\FP\fpinscala-basics\Chapter1\src\main\scala\fpinscala\intro\Cafe.scala
+2023.07.24 12:40:36 INFO  no build target found for D:\git\FP\fpinscala-basics\Chapter1\src\main\scala\fpinscala\intro\Cafe.scala. Using presentation compiler with project's scala-library version: 3.3.0
+2023.07.24 12:40:38 INFO  time: code lens generation in 4.36s
+2023.07.24 12:40:38 INFO  time: code lens generation in 4.36s
+2023.07.24 12:40:38 INFO  time: code lens generation in 4.37s
+2023.07.24 12:40:45 INFO  running 'C:\Program Files\Java\jdk-17.0.1\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\woopsla\AppData\Local\Temp\metals10246820229269776879\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2023.07.24 12:40:47 INFO  [info] welcome to sbt 1.9.0 (Oracle Corporation Java 17.0.1)
+2023.07.24 12:40:49 INFO  [info] loading settings for project fpinscala-basics-build-build from metals.sbt ...
+2023.07.24 12:40:49 INFO  [info] loading project definition from D:\git\FP\fpinscala-basics\project\project
+2023.07.24 12:40:52 INFO  [info] loading settings for project fpinscala-basics-build from metals.sbt ...
+2023.07.24 12:40:52 INFO  [info] loading project definition from D:\git\FP\fpinscala-basics\project
+2023.07.24 12:40:56 INFO  [success] Generated .bloop\fpinscala-basics-build.json
+2023.07.24 12:40:56 INFO  [info] compiling 1 Scala source to D:\git\FP\fpinscala-basics\project\target\scala-2.12\sbt-1.0\classes ...
+2023.07.24 12:40:59 INFO  [info] done compiling
+2023.07.24 12:40:59 INFO  [success] Total time: 7 s, completed 2023. 7. 24. ?삤?썑 12:40:59
+2023.07.24 12:41:03 INFO  [info] loading settings for project root from build.sbt ...
+2023.07.24 12:41:04 INFO  [info] set current project to FPinScala (in build file:/D:/git/FP/fpinscala-basics/)
+2023.07.24 12:41:07 INFO  [success] Generated .bloop\root.json
+2023.07.24 12:41:07 INFO  [success] Generated .bloop\root-test.json
+2023.07.24 12:41:07 INFO  [success] Generated .bloop\utils.json
+2023.07.24 12:41:07 INFO  [success] Generated .bloop\utils-test.json
+2023.07.24 12:41:11 INFO  [success] Generated .bloop\chapter4.json
+2023.07.24 12:41:11 INFO  [success] Generated .bloop\chapter6.json
+2023.07.24 12:41:11 INFO  [success] Generated .bloop\basics.json
+2023.07.24 12:41:11 INFO  [success] Generated .bloop\chapter2.json
+2023.07.24 12:41:11 INFO  [success] Generated .bloop\chapter1.json
+2023.07.24 12:41:11 INFO  [success] Generated .bloop\chapter4-test.json
+2023.07.24 12:41:12 INFO  [success] Generated .bloop\chapter6-test.json
+2023.07.24 12:41:12 INFO  [success] Generated .bloop\basics-test.json
+2023.07.24 12:41:12 INFO  [success] Generated .bloop\chapter2-test.json
+2023.07.24 12:41:12 INFO  [success] Generated .bloop\chapter3.json
+2023.07.24 12:41:12 INFO  [success] Generated .bloop\chapter1-test.json
+2023.07.24 12:41:12 INFO  [success] Generated .bloop\chapter5.json
+2023.07.24 12:41:12 INFO  [success] Generated .bloop\parser.json
+2023.07.24 12:41:12 INFO  [success] Generated .bloop\chapter3-test.json
+2023.07.24 12:41:12 INFO  [success] Generated .bloop\chapter5-test.json
+2023.07.24 12:41:13 INFO  [success] Generated .bloop\parser-test.json
+2023.07.24 12:41:13 INFO  [success] Total time: 9 s, completed 2023. 7. 24. ?삤?썑 12:41:13
+2023.07.24 12:41:13 INFO  time: ran 'sbt bloopInstall' in 28s
+2023.07.24 12:41:13 INFO  Attempting to connect to the build server...
+2023.07.24 12:41:13 INFO  Bloop uses C:\\Program Files\\Java\\jdk-17.0.1 defined at C:\Users\woopsla\.bloop\bloop.json
+2023.07.24 12:41:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\git\FP\fpinscala-basics\.metals\bsp.trace.json or C:\Users\woopsla\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.07.24 12:41:13 INFO  Attempting to connect to the build server...
+2023.07.24 12:41:13 INFO  Bloop uses C:\\Program Files\\Java\\jdk-17.0.1 defined at C:\Users\woopsla\.bloop\bloop.json
+2023.07.24 12:41:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\git\FP\fpinscala-basics\project\.metals\bsp.trace.json or C:\Users\woopsla\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.07.24 12:41:13 INFO  time: Connected to build server in 0.2s
+2023.07.24 12:41:13 INFO  Connected to Build server: Bloop v1.5.8
+2023.07.24 12:41:14 INFO  time: Imported build in 0.64s
+2023.07.24 12:41:27 INFO  time: indexed workspace in 12s
+2023.07.24 12:41:27 INFO  compiling utils (1 scala source)
+2023.07.24 12:41:28 INFO  compiling chapter1 (2 scala sources)
+2023.07.24 12:41:28 INFO  compiling chapter3 (3 scala sources)
+2023.07.24 12:41:28 INFO  compiling chapter4 (5 scala sources)
+2023.07.24 12:41:28 INFO  compiling chapter2 (3 scala sources)
+2023.07.24 12:41:28 INFO  compiling chapter6 (6 scala sources)
+2023.07.24 12:41:28 INFO  compiling chapter5 (2 scala sources)
+2023.07.24 12:41:28 INFO  compiling basics (6 scala sources)
+2023.07.24 12:41:32 INFO  time: compiled utils in 5.3s
+2023.07.24 12:41:32 INFO  time: compiled chapter2 in 3.81s
+2023.07.24 12:41:32 INFO  compiling chapter3-test (2 scala sources)
+2023.07.24 12:41:32 INFO  time: compiled chapter3 in 3.82s
+2023.07.24 12:41:32 INFO  time: compiled chapter1 in 3.9s
+2023.07.24 12:41:32 INFO  compiling chapter6-test (1 scala source)
+2023.07.24 12:41:32 INFO  compiling parser (3 scala sources)
+2023.07.24 12:41:32 INFO  time: compiled chapter6 in 3.9s
+2023.07.24 12:41:32 INFO  time: compiled chapter5 in 4.21s
+2023.07.24 12:41:33 INFO  time: compiled parser in 0.95s
+2023.07.24 12:41:33 INFO  time: compiled chapter6-test in 1.16s
+2023.07.24 12:41:33 INFO  time: compiled chapter3-test in 1.33s
+2023.07.24 12:41:33 INFO  compiling chapter4-test (1 scala source)
+2023.07.24 12:41:33 INFO  time: compiled chapter4 in 5.27s
+2023.07.24 12:41:33 INFO  compiling root (1 scala source)
+2023.07.24 12:41:33 INFO  time: compiled basics in 5.69s
+2023.07.24 12:41:33 INFO  time: compiled chapter4-test in 0.58s
+2023.07.24 12:41:33 INFO  time: compiled root in 0.42s
+2023.07.25 08:24:34 INFO  compiling basics (1 scala source)
+2023.07.25 08:24:35 INFO  time: compiled basics in 1.2s
+2023.07.25 15:31:23 INFO  compiling fpinscala-basics-build (1 scala source)
+2023.07.25 15:31:27 INFO  time: code lens generation in 3.63s
+2023.07.25 15:31:36 INFO  time: compiled fpinscala-basics-build in 13s
+2023.07.25 15:32:15 INFO  compiling basics (1 scala source)
+2023.07.25 15:32:15 INFO  time: compiled basics in 0.45s
+7월 25, 2023 3:36:44 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 520
+7월 25, 2023 3:37:05 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 559
+7월 25, 2023 3:37:10 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 568
+7월 25, 2023 3:37:58 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 692
+2023.07.25 15:38:06 INFO  compiling basics (1 scala source)
+2023.07.25 15:38:06 INFO  time: compiled basics in 0.16s
+2023.07.25 15:39:08 INFO  compiling basics (1 scala source)
+2023.07.25 15:39:08 INFO  time: compiled basics in 0.2s
+2023.07.25 15:39:24 INFO  compiling basics (1 scala source)
+2023.07.25 15:39:24 INFO  time: compiled basics in 0.2s
+2023.07.25 15:43:06 INFO  compiling basics (1 scala source)
+2023.07.25 15:43:06 INFO  time: compiled basics in 0.33s
+2023.07.25 15:43:24 INFO  compiling basics (1 scala source)
+2023.07.25 15:43:24 INFO  time: compiled basics in 0.16s
+2023.07.25 15:43:48 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:21:3: stale bloop error: misaligned end marker
+  end Call_by_Value
+  ^^^^^^^^^^^^^^^^^
+2023.07.25 15:43:48 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:33:1: stale bloop error: misaligned end marker
+end Call_by_Name
+^^^^^^^^^^^^^^^^
+2023.07.25 15:43:48 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:21:3: stale bloop error: misaligned end marker
+  end Call_by_Value
+  ^^^^^^^^^^^^^^^^^
+2023.07.25 15:43:48 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:33:1: stale bloop error: misaligned end marker
+end Call_by_Name
+^^^^^^^^^^^^^^^^
+2023.07.25 15:43:54 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:21:3: stale bloop error: misaligned end marker
+  end Call_by_Value
+  ^^^^^^^^^^^^^^^^^
+2023.07.25 15:43:54 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:33:1: stale bloop error: misaligned end marker
+end Call_by_Name
+^^^^^^^^^^^^^^^^
+2023.07.25 15:43:54 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:21:3: stale bloop error: misaligned end marker
+  end Call_by_Value
+  ^^^^^^^^^^^^^^^^^
+2023.07.25 15:43:54 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:33:1: stale bloop error: misaligned end marker
+end Call_by_Name
+^^^^^^^^^^^^^^^^
+2023.07.25 15:43:54 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:21:3: stale bloop error: misaligned end marker
+  end Call_by_Value
+  ^^^^^^^^^^^^^^^^^
+2023.07.25 15:43:54 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:33:1: stale bloop error: misaligned end marker
+end Call_by_Name
+^^^^^^^^^^^^^^^^
+2023.07.25 15:43:54 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:21:3: stale bloop error: misaligned end marker
+  end Call_by_Value
+  ^^^^^^^^^^^^^^^^^
+2023.07.25 15:43:54 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:33:1: stale bloop error: misaligned end marker
+end Call_by_Name
+^^^^^^^^^^^^^^^^
+2023.07.25 15:43:54 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:21:3: stale bloop error: misaligned end marker
+  end Call_by_Value
+  ^^^^^^^^^^^^^^^^^
+2023.07.25 15:43:54 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:33:1: stale bloop error: misaligned end marker
+end Call_by_Name
+^^^^^^^^^^^^^^^^
+2023.07.25 15:43:54 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:21:3: stale bloop error: misaligned end marker
+  end Call_by_Value
+  ^^^^^^^^^^^^^^^^^
+2023.07.25 15:43:54 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:33:1: stale bloop error: misaligned end marker
+end Call_by_Name
+^^^^^^^^^^^^^^^^
+2023.07.25 15:43:54 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:21:3: stale bloop error: misaligned end marker
+  end Call_by_Value
+  ^^^^^^^^^^^^^^^^^
+2023.07.25 15:43:54 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:33:1: stale bloop error: misaligned end marker
+end Call_by_Name
+^^^^^^^^^^^^^^^^
+2023.07.25 15:43:54 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:21:3: stale bloop error: misaligned end marker
+  end Call_by_Value
+  ^^^^^^^^^^^^^^^^^
+2023.07.25 15:43:54 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:33:1: stale bloop error: misaligned end marker
+end Call_by_Name
+^^^^^^^^^^^^^^^^
+2023.07.25 15:43:55 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:21:3: stale bloop error: misaligned end marker
+  end Call_by_Value
+  ^^^^^^^^^^^^^^^^^
+2023.07.25 15:43:55 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:33:1: stale bloop error: misaligned end marker
+end Call_by_Name
+^^^^^^^^^^^^^^^^
+2023.07.25 15:43:55 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:21:3: stale bloop error: misaligned end marker
+  end Call_by_Value
+  ^^^^^^^^^^^^^^^^^
+2023.07.25 15:43:55 INFO  file:///D:/git/FP/fpinscala-basics/Basics/src/main/scala/fpinscala/basics/parameter_passing/Parameters.scala:33:1: stale bloop error: misaligned end marker
+end Call_by_Name
+^^^^^^^^^^^^^^^^
+2023.07.25 15:44:04 INFO  compiling basics (1 scala source)
+2023.07.25 15:44:04 INFO  time: compiled basics in 0.3s
+2023.07.25 15:44:36 INFO  compiling basics (1 scala source)
+2023.07.25 15:44:36 INFO  time: compiled basics in 0.27s
+7월 25, 2023 3:45:02 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1349
+2023.07.25 15:47:52 INFO  compiling basics (1 scala source)
+2023.07.25 15:47:52 INFO  time: compiled basics in 0.28s
+7월 25, 2023 3:52:06 오후 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 25, 2023 3:52:17 오후 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.07.25 15:55:56 INFO  compiling basics (1 scala source)
+2023.07.25 15:55:56 INFO  time: compiled basics in 0.21s
+7월 25, 2023 3:57:53 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2309
+7월 25, 2023 4:08:50 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2680
+2023.07.25 16:09:05 INFO  compiling chapter2 (1 scala source)
+2023.07.25 16:09:05 INFO  time: compiled chapter2 in 0.23s
+7월 25, 2023 4:09:07 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2771
+2023.07.25 16:09:13 INFO  compiling chapter2 (1 scala source)
+2023.07.25 16:09:13 INFO  time: compiled chapter2 in 0.23s
+2023.07.25 16:10:06 INFO  compiling chapter2 (1 scala source)
+2023.07.25 16:10:06 INFO  time: compiled chapter2 in 0.43s
+2023.07.25 16:10:50 INFO  compiling chapter2 (1 scala source)
+2023.07.25 16:10:50 WARN  Could not load snapshot text for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\HoF.scala
+2023.07.25 16:10:50 INFO  time: compiled chapter2 in 0.34s
+2023.07.25 16:11:25 INFO  compiling chapter2 (1 scala source)
+2023.07.25 16:11:25 INFO  time: compiled chapter2 in 0.3s
+7월 25, 2023 4:14:24 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3103
+2023.07.25 16:14:44 INFO  compiling chapter2 (1 scala source)
+2023.07.25 16:14:44 INFO  time: compiled chapter2 in 0.22s
+2023.07.25 16:15:16 INFO  compiling chapter2 (1 scala source)
+2023.07.25 16:15:16 INFO  time: compiled chapter2 in 0.24s
+2023.07.25 16:15:24 INFO  compiling chapter2 (1 scala source)
+2023.07.25 16:15:24 INFO  time: compiled chapter2 in 0.25s
+2023.07.25 16:16:29 ERROR scalafmt: D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\HoF.scala:25: error: [dialect scala3] : expected but ) found
+    def go(???): Int = 
+              ^
+2023.07.25 16:16:29 INFO  compiling chapter2 (1 scala source)
+2023.07.25 16:16:29 INFO  time: compiled chapter2 in 0.33s
+7월 25, 2023 4:17:23 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3455
+2023.07.25 16:19:07 INFO  compiling chapter2 (1 scala source)
+2023.07.25 16:19:07 INFO  time: compiled chapter2 in 0.15s
+2023.07.25 16:19:14 INFO  compiling chapter2 (1 scala source)
+2023.07.25 16:19:14 INFO  time: compiled chapter2 in 0.28s
+2023.07.25 16:19:46 INFO  compiling chapter2 (1 scala source)
+2023.07.25 16:19:46 INFO  time: compiled chapter2 in 0.21s
+2023.07.25 16:20:47 INFO  compiling chapter2 (1 scala source)
+2023.07.25 16:20:47 INFO  time: compiled chapter2 in 0.42s
+2023.07.25 16:21:33 INFO  compiling chapter2 (1 scala source)
+2023.07.25 16:21:33 INFO  time: compiled chapter2 in 0.44s
+2023.07.25 16:21:46 INFO  compiling chapter2 (1 scala source)
+2023.07.25 16:21:46 INFO  time: compiled chapter2 in 0.28s
+7월 25, 2023 4:27:34 오후 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 25, 2023 4:27:59 오후 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+7월 25, 2023 4:28:03 오후 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.07.25 16:28:05 INFO  Shutting down server
+2023.07.25 16:28:05 INFO  shutting down Metals
+2023.07.25 16:28:05 INFO  Shut down connection with build server.
+2023.07.25 16:28:05 INFO  Shut down connection with build server.
+2023.07.25 16:28:05 INFO  Exiting server
+2023.07.25 16:28:39 INFO  Started: Metals version 1.0.0 in folders 'D:\git\FP\fpinscala-basics' for client Visual Studio Code 1.71.0.
+7월 25, 2023 4:28:39 오후 org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.20.1 by Redgate
+7월 25, 2023 4:28:39 오후 org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+7월 25, 2023 4:28:39 오후 org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+7월 25, 2023 4:28:39 오후 org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\git\FP\fpinscala-basics\.metals\metals (H2 2.1)
+2023.07.25 16:28:39 WARN  resetting database: D:\git\FP\fpinscala-basics\.metals\metals.h2.db
+2023.07.25 16:28:39 ERROR org.flywaydb.core.api.FlywayException: Unable to execute clean as it has been disabled with the 'flyway.cleanDisabled' property.
+	at org.flywaydb.core.internal.command.clean.DbClean.clean(DbClean.java:57)
+	at org.flywaydb.core.Flyway.doClean(Flyway.java:395)
+	at org.flywaydb.core.Flyway.lambda$clean$2(Flyway.java:235)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:196)
+	at org.flywaydb.core.Flyway.clean(Flyway.java:234)
+	at scala.meta.internal.metals.Tables.migrateOrRestart(Tables.scala:156)
+	at scala.meta.internal.metals.Tables.tryUrl(Tables.scala:144)
+	at scala.meta.internal.metals.Tables.persistentConnection(Tables.scala:138)
+	at scala.meta.internal.metals.Tables.tryAutoServer(Tables.scala:81)
+	at scala.meta.internal.metals.Tables.connect(Tables.scala:48)
+	at scala.meta.internal.metals.Tables.connection(Tables.scala:74)
+	at scala.meta.internal.metals.Tables.$anonfun$fingerprints$1(Tables.scala:39)
+	at scala.meta.internal.metals.Fingerprints.load(Fingerprints.scala:52)
+	at scala.meta.internal.metals.MetalsLspService.loadFingerPrints(MetalsLspService.scala:848)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$3(WorkspaceLspService.scala:993)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$3$adapted(WorkspaceLspService.scala:993)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$2(WorkspaceLspService.scala:993)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+7월 25, 2023 4:28:40 오후 org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\git\FP\fpinscala-basics\.metals\metals (H2 2.1)
+2023.07.25 16:28:39 WARN  resetting database: D:\git\FP\fpinscala-basics\.metals\metals.h2.db
+2023.07.25 16:28:39 ERROR unable to setup persistent H2 database with AUTO_SERVER=false, falling back to in-memory database. This means you may be redundantly asked to execute 'Import build', even if it's not needed. Also, code navigation will not work for existing files in the .metals/readonly/ directory. To fix this problem, make sure you only have one running Metals server in the directory 'D:\git\FP\fpinscala-basics'.
+org.flywaydb.core.api.FlywayException: Unable to execute clean as it has been disabled with the 'flyway.cleanDisabled' property.
+	at org.flywaydb.core.internal.command.clean.DbClean.clean(DbClean.java:57)
+	at org.flywaydb.core.Flyway.doClean(Flyway.java:395)
+	at org.flywaydb.core.Flyway.lambda$clean$2(Flyway.java:235)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:196)
+	at org.flywaydb.core.Flyway.clean(Flyway.java:234)
+	at scala.meta.internal.metals.Tables.migrateOrRestart(Tables.scala:156)
+	at scala.meta.internal.metals.Tables.tryUrl(Tables.scala:144)
+	at scala.meta.internal.metals.Tables.persistentConnection(Tables.scala:138)
+	at scala.meta.internal.metals.Tables.tryNoAutoServer(Tables.scala:98)
+	at scala.meta.internal.metals.Tables.tryAutoServer(Tables.scala:92)
+	at scala.meta.internal.metals.Tables.connect(Tables.scala:48)
+	at scala.meta.internal.metals.Tables.connection(Tables.scala:74)
+	at scala.meta.internal.metals.Tables.$anonfun$fingerprints$1(Tables.scala:39)
+	at scala.meta.internal.metals.Fingerprints.load(Fingerprints.scala:52)
+	at scala.meta.internal.metals.MetalsLspService.loadFingerPrints(MetalsLspService.scala:848)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$3(WorkspaceLspService.scala:993)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$3$adapted(WorkspaceLspService.scala:993)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$initialize$2(WorkspaceLspService.scala:993)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+7월 25, 2023 4:28:40 오후 org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:mem:metals (H2 2.1)
+7월 25, 2023 4:28:40 오후 org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFO: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+7월 25, 2023 4:28:40 오후 org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.001s)
+7월 25, 2023 4:28:40 오후 org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+7월 25, 2023 4:28:40 오후 org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": << Empty Schema >>
+7월 25, 2023 4:28:40 오후 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "1 - Create tables"
+7월 25, 2023 4:28:40 오후 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "2 - Server discovery"
+7월 25, 2023 4:28:40 오후 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+7월 25, 2023 4:28:40 오후 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+7월 25, 2023 4:28:40 오후 org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.010s)
+2023.07.25 16:28:40 INFO  time: initialize in 1.35s
+2023.07.25 16:28:41 INFO  Attempting to connect to the build server...
+2023.07.25 16:28:41 INFO  Bloop uses C:\\Program Files\\Java\\jdk-17.0.1 defined at C:\Users\woopsla\.bloop\bloop.json
+2023.07.25 16:28:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\git\FP\fpinscala-basics\.metals\bsp.trace.json or C:\Users\woopsla\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.07.25 16:28:42 INFO  Attempting to connect to the build server...
+2023.07.25 16:28:42 INFO  Bloop uses C:\\Program Files\\Java\\jdk-17.0.1 defined at C:\Users\woopsla\.bloop\bloop.json
+2023.07.25 16:28:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\git\FP\fpinscala-basics\project\.metals\bsp.trace.json or C:\Users\woopsla\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.07.25 16:28:42 INFO  time: Connected to build server in 0.44s
+2023.07.25 16:28:42 INFO  Connected to Build server: Bloop v1.5.8
+2023.07.25 16:28:43 INFO  time: Imported build in 1.07s
+2023.07.25 16:28:46 INFO  no build target found for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\HoF.scala. Using presentation compiler with project's scala-library version: 3.3.0
+2023.07.25 16:28:47 INFO  time: code lens generation in 5.2s
+2023.07.25 16:28:47 INFO  time: code lens generation in 5.2s
+2023.07.25 16:28:59 INFO  time: indexed workspace in 15s
+2023.07.25 16:28:59 INFO  compiling chapter4-test (1 scala source)
+2023.07.25 16:28:59 INFO  time: compiled chapter4-test in 0.42s
+7월 25, 2023 4:32:16 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13
+7월 25, 2023 4:57:11 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 51
+2023.07.25 16:58:12 INFO  compiling chapter2 (1 scala source)
+2023.07.25 16:58:12 INFO  time: compiled chapter2 in 0.14s
+7월 25, 2023 5:01:58 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 413
+2023.07.25 17:02:54 INFO  compiling chapter2 (1 scala source)
+2023.07.25 17:02:54 INFO  time: compiled chapter2 in 0.21s
+2023.07.25 17:03:45 INFO  compiling chapter2 (1 scala source)
+2023.07.25 17:03:45 WARN  Could not load snapshot text for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.25 17:03:45 INFO  time: compiled chapter2 in 0.2s
+7월 25, 2023 5:04:33 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 695
+2023.07.25 17:06:47 INFO  compiling chapter2 (1 scala source)
+2023.07.25 17:06:47 INFO  time: compiled chapter2 in 0.5s
+7월 25, 2023 5:06:58 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1049
+2023.07.25 17:07:11 INFO  compiling chapter2 (1 scala source)
+2023.07.25 17:07:11 INFO  time: compiled chapter2 in 0.34s
+7월 25, 2023 5:07:29 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1140
+7월 25, 2023 5:07:30 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1141
+7월 25, 2023 5:09:19 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1495
+2023.07.25 17:09:29 INFO  compiling chapter2 (1 scala source)
+2023.07.25 17:09:29 INFO  time: compiled chapter2 in 0.19s
+7월 25, 2023 5:17:12 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1646
+2023.07.25 17:17:55 INFO  compiling chapter2 (1 scala source)
+2023.07.25 17:17:55 INFO  time: compiled chapter2 in 0.24s
+7월 25, 2023 5:21:42 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2101
+2023.07.25 17:21:49 INFO  compiling chapter2 (1 scala source)
+2023.07.25 17:21:49 WARN  Could not load snapshot text for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.25 17:21:49 INFO  time: compiled chapter2 in 0.22s
+7월 25, 2023 5:22:29 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2212
+2023.07.25 17:22:55 INFO  compiling chapter2 (1 scala source)
+2023.07.25 17:22:55 INFO  time: compiled chapter2 in 0.33s
+7월 25, 2023 5:23:18 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2410
+2023.07.25 17:23:57 WARN  Could not load snapshot text for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.25 17:23:57 WARN  Could not load snapshot text for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.25 17:23:57 INFO  compiling chapter2 (1 scala source)
+2023.07.25 17:23:57 WARN  Could not load snapshot text for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.25 17:23:57 INFO  time: compiled chapter2 in 0.36s
+2023.07.25 17:24:18 INFO  compiling chapter2 (1 scala source)
+2023.07.25 17:24:18 INFO  time: compiled chapter2 in 0.34s
+2023.07.25 17:25:57 INFO  compiling chapter2 (1 scala source)
+2023.07.25 17:25:57 INFO  time: compiled chapter2 in 0.12s
+2023.07.25 17:26:06 INFO  compiling chapter2 (1 scala source)
+2023.07.25 17:26:06 INFO  time: compiled chapter2 in 0.19s
+7월 25, 2023 5:26:52 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2903
+2023.07.25 17:27:10 INFO  compiling chapter2 (1 scala source)
+2023.07.25 17:27:10 INFO  time: compiled chapter2 in 0.38s
+2023.07.25 17:27:11 WARN  Could not load snapshot text for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.25 17:27:35 WARN  Could not load snapshot text for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.25 17:27:38 INFO  compiling chapter2 (1 scala source)
+2023.07.25 17:27:38 INFO  time: compiled chapter2 in 0.17s
+2023.07.25 17:27:38 WARN  Could not load snapshot text for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.25 17:27:40 WARN  Could not load snapshot text for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.25 17:27:40 WARN  Could not load snapshot text for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.25 17:27:43 WARN  Could not load snapshot text for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.25 17:27:47 WARN  Could not load snapshot text for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.25 17:27:47 WARN  Could not load snapshot text for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.25 17:27:48 WARN  Could not load snapshot text for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.25 17:27:49 WARN  Could not load snapshot text for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.25 17:27:55 WARN  Could not load snapshot text for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.25 17:27:58 WARN  Could not load snapshot text for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.25 17:27:58 WARN  Could not load snapshot text for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.25 17:27:58 WARN  Could not load snapshot text for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.25 17:27:58 WARN  Could not load snapshot text for D:\git\FP\fpinscala-basics\Chapter2\src\main\scala\fpinscala\functions\Polymorphic.scala
+2023.07.25 17:27:59 INFO  compiling chapter2 (1 scala source)
+2023.07.25 17:27:59 INFO  time: compiled chapter2 in 0.34s
+7월 25, 2023 5:29:18 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3090
+2023.07.25 18:13:41 INFO  compiling chapter4-test (1 scala source)
+2023.07.25 18:13:41 INFO  time: compiled chapter4-test in 52ms
+7월 25, 2023 6:14:33 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3142
+2023.07.25 18:14:36 INFO  compiling chapter4 (1 scala source)
+2023.07.25 18:14:36 INFO  time: compiled chapter4 in 0.14s
+2023.07.25 18:14:36 INFO  compiling chapter2 (1 scala source)
+2023.07.25 18:14:36 INFO  time: compiled chapter2 in 0.17s
+2023.07.25 18:14:42 INFO  compiling chapter4 (1 scala source)
+2023.07.25 18:14:42 INFO  time: compiled chapter4 in 0.32s
+2023.07.25 18:14:44 INFO  compiling chapter4-test (1 scala source)
+2023.07.25 18:14:44 INFO  time: compiled chapter4-test in 0.12s
+2023.07.25 18:15:07 INFO  compiling chapter4-test (1 scala source)
+2023.07.25 18:15:07 INFO  time: compiled chapter4-test in 0.2s
